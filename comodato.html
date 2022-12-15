@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projeto Rota73/Comodato-de-equipamento</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+
+	<style type="text/css">
+	
+	*{
+		padding: 0;
+		margin: 0;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	*li{
+		list-style: ;
+	}
+
+	body{
+		width: 100%;
+		margin: auto;
+		width: 410px;
+		background: black url(Imagem/pacfundo.png);
+	}
+
+	.borda{
+		border: 1px solid red;
+	}
+
+	.centralizar-texto{
+		text-align: center;
+		background: white;
+		color: black;
+	}
+
+		.centralizar-texto-rodape{
+		background: black;
+		color: white;
+		text-align: center;
+	}
+
+
+
+	#imagem-capa{
+		background: red url(Imagem/capa.png) no-repeat;
+		width: auto;
+		max-width: 410px;
+		max-height: 410px;
+		height: 410px;
+	}
+
+	.bloco_na_linha li{
+		display: inline-block;
+		width: 105px;
+		border: 7px ridge yellow;
+		font-weight: bold;
+		background: gold;
+		color: black;
+	}
+
+	#cor1{
+		color: #d70909;
+	}
+
+	#cor2{
+		color: #00018b;
+	}
+
+	.menu-principal{
+		line-height: 35px;
+		padding: 5px;
+		text-transform: uppercase;
+	}
+
+	.justificar-texto{
+		text-align: justify;
+		padding: 20px;
+		background-color: rgba(255, 255, 255, 0.7);
+		margin: 20px;
+		border-radius: 10px;
+	}
+
+	.menu-caixas{
+		background-color: gold;
+		color: black;
+		width: 180px;
+		height: 180px;
+		margin: 10px;
+		float: left;
+		padding-top: 75px;
+		text-align: center;
+		box-sizing: border-box;
+		border-radius: 20px;
+		font-weight: bold;
+		border: 7px ridge gold;
+	}
+
+	.float-esquerda{
+		float: left;
+	}
+
+
+	#rodape{
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+		margin: 0px;
+		padding: 0px;
+		background: black;
+		clear: both;
+	}
+
+	#texto-cadastro{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 10px;
+		margin: 20px;
+		text-align: justify;
+		background-color: rgba(255, 255, 255, 0.7);
+		border-radius: 10px;
+	}
+
+	.borda-titulo{
+		background: lightblue; 
+		border: 7px groove royalblue;
+	}
+
+	.aling{
+		padding: 15px;
+	}
+
+	li{
+		list-style: none;
+	}
+
+	.span1{
+		background: black; 
+		color: white;
+		padding: 7px;
+	}
+
+	.clickaq{
+		color: #0000FF;
+		font-style: italic;
+		font-weight: bold;
+		font-size: 1em;
+		animation-name: animacao-link;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+	}
+
+
+	@keyframes animacao-link{
+	from{color: #0000FF;}
+	to{color: purple;}
+}
+
+@keyframes solicite-link{
+	from{color: black;}
+	to{color: white;}
+}
+
+.botao-link{
+		font-weight: bold;
+		animation-name: solicite-link;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+	}
+
+	#sombra-caixa{
+		box-shadow: -5px -5px rgba(0, 0, 0, 0.7);
+	}
+
+
+	.float-esquerda li:active{color: #00ff03;}
+
+	.bloco_na_linha li:active{color: #00ff03;}
+
+
+
+
+	</style>
+
+
+
+</head>
+<body>
+
+	<!-- ÍNICIO CARROSSEL BOOTSTRAP -->
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="Imagem/estrellagalicia-carrossel.png" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="Imagem/Eisenbahn-carrossel.png" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="Imagem/Therezopolis-carrossel.png" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		 <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Anterior</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Próximo</span>
+		  </button>
+		</div>
+<!-- FIM DO CARROSSEL BOOTSTRAP -->
+
+<div style="background: royalblue url(Imagem/fundoazul.png); border: 1px solid green;">
+
+
+	<div class="borda-titulo">
+		<h3 class="centralizar-texto">Distribuidora <span id="cor1">Nova</span> <span id="cor2">Geração</span></h3>
+		<h2 class="centralizar-texto">Vendedor Eduardo Rota 73</h2>
+	</div>
+
+	<div id="imagem-capa">
+		
+	</div>
+
+	<div style="width: 410px;">
+		
+		<ul class="bloco_na_linha" style="padding-top: 15px; margin-left: 18px;">
+			<a class="menu-principal" style="padding-left: 15px;" href="index.html"><li class="centralizar-texto">Início</li></a>
+			<a class="menu-principal" href="missao.html"><li class="centralizar-texto">Missão</li></a>
+			<a class="menu-principal" href="contato.html"><li class="centralizar-texto">Contato</li></a>
+		</ul>
+
+	</div>
+
+	<div id="texto-cadastro">
+		<h2 class="centralizar-texto" style="padding-bottom: 5px; padding-top: 5px;">Comodato de Equipamento</h2>
+		<br>
+		<p>
+			&nbsp&nbspTenho percebido que existe uma grande quantidade de clientes que gostariam de possuír uma geladeira Coca-Cola&#0174 em seu estabelecimento.<br>
+			&nbsp&nbspConfira abaixo os critérios necessários para obter o equipamento. Estando de acordo é só prosseguir com a Solicitação clicando no botão no final da página.<br>
+			&nbsp&nbspAnalizaremos e remanejaremos os equipamentos conforme a disponibilidade dos mesmos.
+		</p>
+		<br>
+		<h2 style="background: white;">Critérios Principais</h2>
+		<br>
+		<br>
+		<p>
+			<ul>
+				<li><strong><span class="span1">Invasão de Produtos Concorrentes</span></strong><br>
+					<p class="aling">&nbsp&nbspCertamente um dos critérios mais importantes para a obtenção e permanência do equipamento Coca-Cola no seu estabelecimento.<br>
+						&nbsp&nbspO proprietário ou gestor do estabelecimento deve estar ciente que o envio de uma geladeira Coca-Cola para o seu estabelecimento tem a finalidade de alavancar as vendas da nossa marca e FORTALECER o nivel de parceria entre nossa empresa e o Ponto de Venda.<br>
+						&nbsp&nbsp<span style="font-style: italic;">A partir do momento que o Ponto de Venda aceita os termos para obtenção da geladeira é importante que fique ciente que faz parte do escopo de trabalho do vendedor:</span>
+							<ul style="font-style: italic; padding-left: 30px; padding-right: 30px"><li>Manter a geladeira abastecida com o mix de produtos;</li>
+								<li>Retirar e advertir sobre possiveis invasões de concorrentes;
+								<li>Estar atento ao giro dos produtos e suas validades.</li>
+							</ul>
+							<br>
+						&nbsp&nbspReforçamos que o ponto de venda tem total liberdade para comercializar marcas concorrentes desde que utilize equipamento próprio ou comodato do concorrente para armazenar e gelar seus produtos.<br>
+						<i>&nbsp&nbsp</i>
+					</p>
+				</li>
+
+				<br>
+
+				<li><strong><span class="span1">Disponibilidade do Mix de Produtos</span></strong><br>
+					<p class="aling">&nbsp&nbspA análise para envio do equipamento levará em conta o histórico recente do cliente em comercializar diversidade do mix de produtos da marca Coca-Cola incluíndo a linha de refrigerantes sabores, sucos, chás, hidrotônicos e energéticos. De acordo com seu canal de vendas e tipo de equipamento em comodato pode-se incluir a linha de cervejas. <br>
+					</p>
+				</li>
+
+				<br>
+
+				<li><strong><span class="span1">Giro Mínimo Mensal</span></strong><br>
+					<p class="aling">&nbsp&nbsp Para se tornar elegível ao recebimento do equipamento deve-se possuir giro mínimo de mercadoria de 48 caixas/mês para o menor modelo de refrigerador.<br>
+						&nbsp&nbspPara a permanência do equipamento no ponto de venda é necessário cumprir a meta que é Especificamente estipulada no Contrato.<br>
+						&nbsp&nbspO não cumprimento recorrente da meta pode implicar na recolha do equipamento após aviso prévio.
+						<br>
+						&nbsp&nbspUma caixa é representada por um fardo de qualquer produto, seja uma embalagem com 6 latas 350ml de refrigerante ou uma caixa com 12 unidades 200ml de suco. Ou seja, um pack representa uma caixa.
+					</p>
+				</li>
+				
+			</ul>
+
+			<a target="blank" class="clickaq" href="contrato-comodato.html">Click Aqui para ver o contrato na integra!</a>
+
+			<br>
+			<br>
+					<a target="blank" href="https://api.whatsapp.com/send?phone=5541988776618&text=Ol%C3%A1.%20Declaro%20que%20li%20os%20termos%20e%20crit%C3%A9rios%20para%20obten%C3%A7%C3%A3o%20e%20perman%C3%AAncia%20do%20equipamento%20Coca-Cola%20Nova%20Gera%C3%A7%C3%A3o.%20Estou%20de%20acordo%20e%20gostaria%20de%20oficializar%20a%20Solicita%C3%A7%C3%A3o%20de%20Comodato%20de%20Equipamento%20por%20meio%20desta%20mensagem.">
+						<div id="sombra-caixa" class="botao-link" style= "margin-left: 20px; margin-top: 25px; background: green; width: 300px; border: 5px solid black; text-align: center; font-weight: bold; color: white; line-height: 50px; border-radius: 15px;">
+							SOLICITAR GELADEIRA!
+						</div>
+					</a>
+			</p>
+
+			<br>
+
+		</div>
+			<br>
+			<br>
+
+
+	<div id="rodape">
+		<p id="rodape" class="centralizar-texto">Site elaborado por Eduardo Rozemback Albini</p>
+		<p id="rodape" class="centralizar-texto">Idealizado para telas de celulares</p>
+	</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>

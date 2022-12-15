@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projeto Rota73/RotasdoVendedor</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+
+	<style type="text/css">
+	
+	*{
+		padding: 0;
+		margin: 0;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	*li{
+		list-style: ;
+	}
+
+	body{
+		width: 100%;
+		margin: auto;
+		width: 410px;
+		background: black url(Imagem/pacfundo.png);
+	}
+
+	.borda{
+		border: 1px solid red;
+	}
+
+	.centralizar-texto{
+		text-align: center;
+	}
+
+	#imagem-capa{
+		background: red url(Imagem/capa.png) no-repeat;
+		width: auto;
+		max-width: 410px;
+		max-height: 410px;
+		height: 410px;
+	}
+
+	.bloco_na_linha li{
+		display: inline-block;
+		width: 105px;
+		border: 7px ridge yellow;
+		font-weight: bold;
+		background: gold;
+		color: black;
+	}
+
+	#cor1{
+		color: #d70909;
+	}
+
+	#cor2{
+		color: #00018b;
+	}
+
+	.menu-principal{
+		line-height: 35px;
+		padding: 5px;
+		text-transform: uppercase;
+	}
+
+	.justificar-texto{
+		text-align: justify;
+		padding: 20px;
+		background-color: rgba(255, 255, 255, 0.7);
+		margin: 20px;
+		border-radius: 10px;
+	}
+
+	.menu-caixas{
+		background-color: gold;
+		color: black;
+		width: 180px;
+		height: 180px;
+		margin: 10px;
+		float: left;
+		padding-top: 75px;
+		text-align: center;
+		box-sizing: border-box;
+		border-radius: 20px;
+		font-weight: bold;
+		border: 7px ridge gold;
+	}
+
+	.float-esquerda{
+		float: left;
+	}
+
+
+	#rodape{
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+		margin: 0px;
+		padding: 0px;
+		background: black;
+		clear: both;
+	}
+
+	#texto-RotaVendedor{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 10px;
+		margin: 20px;
+		text-align: justify;
+		background-color: rgba(255, 255, 255, 0.7);
+		border-radius: 10px;
+	}
+
+	.borda-titulo{
+		background: lightblue; 
+		border: 7px groove royalblue;
+	}
+
+	.float-esquerda li:active{color: #00ff03;}
+
+.bloco_na_linha li:active{color: #00ff03;}
+
+	</style>
+
+
+
+</head>
+<body>
+
+	<!-- ÍNICIO CARROSSEL BOOTSTRAP -->
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="Imagem/estrellagalicia-carrossel.png" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="Imagem/Eisenbahn-carrossel.png" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="Imagem/Therezopolis-carrossel.png" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		 <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Anterior</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Próximo</span>
+		  </button>
+		</div>
+<!-- FIM DO CARROSSEL BOOTSTRAP -->
+
+<div style="background: royalblue url(Imagem/fundoazul.png); border: 1px solid green;">
+
+
+	<div class="borda-titulo">
+		<h3 class="centralizar-texto">Distribuidora <span id="cor1">Nova</span> <span id="cor2">Geração</span></h3>
+		<h2 class="centralizar-texto">Vendedor Eduardo Rota 73</h2>
+	</div>
+
+	<div id="imagem-capa">
+		
+	</div>
+
+	<div style="width: 410px;">
+		
+		<ul class="bloco_na_linha" style="padding-top: 15px; margin-left: 18px;">
+			<a class="menu-principal" style="padding-left: 15px;" href="index.html"><li class="centralizar-texto">Início</li></a>
+			<a class="menu-principal" href="missao.html"><li class="centralizar-texto">Missão</li></a>
+			<a class="menu-principal" href="contato.html"><li class="centralizar-texto">Contato</li></a>
+		</ul>
+
+	</div>
+
+	<div id="texto-RotaVendedor">
+		<h1 class="centralizar-texto" style="padding-bottom: 15px;">Rotas do Vendedor</h1>
+
+		<br>
+
+		<ul style="padding-left: 20px;">
+			<li><h2 style="color: royalblue;">Segunda-Feira</h2></li>
+			<ul style="padding-left: 20px;">
+				<li><h3>Morretes</h3>
+				<ul style="padding-left: 20px;">
+					<li><h3>Porto de Cima</h3></li>
+					<li><h3>São Jõao da Graciosa</h3></li>
+					</li></ul>
+
+				<li><h3>Antonina</h3>
+					<ul style="padding-left: 20px;"><li><h3>Batel</h3></li>
+				<li><h3>Tucunduva</h3></li>
+				</ul>
+				</li>
+			</ul>
+		</ul>
+
+		<br><br>
+
+		<ul style="padding-left: 20px;">
+			<li><h2 style="color: royalblue;">Terça-Feira</h2>
+				<ul style="padding-left: 20px;">
+			<li><h3>Antonina</h3></li>
+				<ul style="padding-left: 20px;">
+					<li><h3>Rio do Nunes</h3>
+					<li><h3>Bairro Alto</h3></li>
+				</ul>
+				</li>
+				<li><h3>PR 405 (estrada de Guaraqueçaba)</h3>
+					<ul style="padding-left: 20px;">
+						<li><h3>Tagaçaba</h3></li>
+						<li><h3>Serra Negra</h3></li>
+						<li><h3>Entrada de Guaraqueçaba</h3></li>
+					</ul>
+			</li>
+			</ul>
+		</ul>
+
+		<br><br>
+
+		<ul style="padding-left: 20px;">
+			<li><h2 style="color: royalblue;">Quarta-Feira</h2></li>
+			<ul style="padding-left: 20px;">
+				<li><h3>Guaraqueçaba</h3></li>
+			</ul>
+		</ul>
+
+		<br><br>
+
+		<ul style="padding-left: 20px;">
+			<li><h2 style="color: royalblue;">Quinta-Feira</h2></li>
+			<ul style="padding-left: 20px;">
+				<li><h3>Antonina</h3>
+				<ul style="padding-left: 20px;">
+					<li><h3>Centro</h3></li>
+					<li><h3>Itapema</h3></li>
+					<li><h3>Ponta da Pita</h3></li>
+				</ul>
+				</li>
+			</ul>
+		</ul>
+
+		<br><br>
+
+		<ul style="padding-left: 20px;">
+			<li><h2 style="color: royalblue;">Sexta-Feira</h2></li>
+			<ul style="padding-left: 20px;">
+				<li><h3>Morretes</h3></li>
+			</ul>
+		</ul>
+
+		<br><br>
+
+		<ul style="padding-left: 20px;">
+			<li><h2 style="color: royalblue;">Sábado</h2></li>
+			<ul style="padding-left: 20px;">
+				<li><h3>Paranaguá</h3>
+					<ul style="padding-left: 20px;">
+						<li><h3>Jacarandá</h3></li>
+						<li><h3>Cominese</h3></li>
+						<li><h3>Porto Seguro</h3></li>
+						<li><h3>Jardim Paraná</h3></li>
+					</ul>
+				</li>
+			</ul>
+		</ul>
+
+		<br><br>
+
+		<h4>Expediente:<br>
+		Segunda a Sexta: 08:00hs as 18:00hs<br>
+		Sábado: 08:00hs as 13:00hs.</h4>
+
+
+		
+	</div>
+
+
+
+	<div id="rodape">
+		<p id="rodape" class="centralizar-texto">Site elaborado por Eduardo Rozemback Albini</p>
+		<p id="rodape" class="centralizar-texto">Idealizado para telas de celulares</p>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>

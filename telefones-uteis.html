@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projeto Rota73/Telefones-Uteis</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+
+	<style type="text/css">
+	
+	*{
+		padding: 0;
+		margin: 0;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	*li{
+		list-style: ;
+	}
+
+	body{
+		width: 100%;
+		margin: auto;
+		width: 410px;
+		background: black url(Imagem/pacfundo.png);
+	}
+
+	.borda{
+		border: 1px solid red;
+	}
+
+	.centralizar-texto{
+		text-align: center;
+	}
+
+	#imagem-capa{
+		background: red url(Imagem/capa.png) no-repeat;
+		width: auto;
+		max-width: 410px;
+		max-height: 410px;
+		height: 410px;
+	}
+
+	.bloco_na_linha li{
+		display: inline-block;
+		width: 105px;
+		border: 7px ridge yellow;
+		font-weight: bold;
+		background: gold;
+		color: black;
+	}
+
+	#cor1{
+		color: #d70909;
+	}
+
+	#cor2{
+		color: #00018b;
+	}
+
+	.menu-principal{
+		line-height: 35px;
+		padding: 5px;
+		text-transform: uppercase;
+	}
+
+	.justificar-texto{
+		text-align: justify;
+		padding: 20px;
+		background-color: rgba(255, 255, 255, 0.7);
+		margin: 20px;
+		border-radius: 10px;
+	}
+
+	.menu-caixas{
+		background-color: gold;
+		color: black;
+		width: 180px;
+		height: 180px;
+		margin: 10px;
+		float: left;
+		padding-top: 75px;
+		text-align: center;
+		box-sizing: border-box;
+		border-radius: 20px;
+		font-weight: bold;
+		border: 7px ridge gold;
+	}
+
+	.float-esquerda{
+		float: left;
+	}
+
+
+	#rodape{
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+		margin: 0px;
+		padding: 0px;
+		background: black;
+		clear: both;
+	}
+
+	#texto-contato{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 10px;
+		margin: 20px;
+		text-align: justify;
+		background-color: rgba(255, 255, 255, 0.7);
+		border-radius: 10px;
+	}
+
+	.borda-titulo{
+		background: lightblue; 
+		border: 7px groove royalblue;
+	}
+
+	.whatsh1{
+		color: green;
+		font-family: arial;
+	}
+
+	.float-esquerda li:active{color: #00ff03;}
+
+	.bloco_na_linha li:active{color: #00ff03;}
+
+	</style>
+
+
+
+</head>
+<body>
+
+	<!-- ÍNICIO CARROSSEL BOOTSTRAP -->
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="Imagem/estrellagalicia-carrossel.png" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="Imagem/Eisenbahn-carrossel.png" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="Imagem/Therezopolis-carrossel.png" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		 <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Anterior</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Próximo</span>
+		  </button>
+		</div>
+<!-- FIM DO CARROSSEL BOOTSTRAP -->
+
+<div style="background: royalblue url(Imagem/fundoazul.png); border: 1px solid green;">
+
+
+	<div class="borda-titulo">
+		<h3 class="centralizar-texto">Distribuidora <span id="cor1">Nova</span> <span id="cor2">Geração</span></h3>
+		<h2 class="centralizar-texto">Vendedor Eduardo Rota 73</h2>
+	</div>
+
+	<div id="imagem-capa">
+		
+	</div>
+
+	<div style="width: 410px;">
+		
+		<ul class="bloco_na_linha" style="padding-top: 15px; margin-left: 18px;">
+			<a class="menu-principal" style="padding-left: 15px;" href="index.html"><li class="centralizar-texto">Início</li></a>
+			<a class="menu-principal" href="missao.html"><li class="centralizar-texto">Missão</li></a>
+			<a class="menu-principal" href="contato.html"><li class="centralizar-texto">Contato</li></a>
+		</ul>
+
+	</div>
+
+	<div id="texto-contato">
+		<h1 class="centralizar-texto" style="padding-bottom: 15px;">Telefones Úteis</h1>
+		
+		<h4 style="background: white; padding: 5px;">Manutenção de Equipamentos</h4>
+		<h5>Whatsapp:</h5>
+		<a href="https://api.whatsapp.com/send?phone=5511989649773"><h5>(11)98964-9773</h5></a><br>
+
+
+		
+
+	</div>
+
+
+	<div id="rodape">
+		<p id="rodape" class="centralizar-texto">Site elaborado por Eduardo Rozemback Albini</p>
+		<p id="rodape" class="centralizar-texto">Idealizado para telas de celulares</p>
+	</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>

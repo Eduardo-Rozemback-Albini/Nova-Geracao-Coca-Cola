@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projeto Rota73/contrato</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+
+	<style type="text/css">
+	
+	*{
+		padding: 0;
+		margin: 0;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	*li{
+		list-style: ;
+	}
+
+	body{
+		width: 100%;
+		margin: auto;
+		width: 410px;
+		background: black url(Imagem/pacfundo.png);
+	}
+
+	.borda{
+		border: 1px solid red;
+	}
+
+	.centralizar-texto{
+		text-align: center;
+	}
+
+	#imagem-capa{
+		background: red url(Imagem/capa.png) no-repeat;
+		width: auto;
+		max-width: 410px;
+		max-height: 410px;
+		height: 410px;
+	}
+
+	.bloco_na_linha li{
+		display: inline-block;
+		width: 105px;
+		border: 7px ridge yellow;
+		font-weight: bold;
+		background: gold;
+		color: black;
+	}
+
+	#cor1{
+		color: #d70909;
+	}
+
+	#cor2{
+		color: #00018b;
+	}
+
+	.menu-principal{
+		line-height: 35px;
+		padding: 5px;
+		text-transform: uppercase;
+	}
+
+	.justificar-texto{
+		text-align: justify;
+		padding: 20px;
+		background-color: rgba(255, 255, 255, 0.7);
+		margin: 20px;
+		border-radius: 10px;
+	}
+
+	.menu-caixas{
+		background-color: gold;
+		color: black;
+		width: 180px;
+		height: 180px;
+		margin: 10px;
+		float: left;
+		padding-top: 75px;
+		text-align: center;
+		box-sizing: border-box;
+		border-radius: 20px;
+		font-weight: bold;
+		border: 7px ridge gold;
+	}
+
+	.float-esquerda{
+		float: left;
+	}
+
+
+	#rodape{
+		color: white;
+		font-weight: bold;
+		font-size: 12px;
+		margin: 0px;
+		padding: 0px;
+		background: black;
+		clear: both;
+	}
+
+	#texto-cadastro{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 10px;
+		margin: 20px;
+		text-align: justify;
+		background-color: rgba(255, 255, 255, 0.7);
+		border-radius: 10px;
+	}
+
+	.borda-titulo{
+		background: lightblue; 
+		border: 7px groove royalblue;
+	}
+
+	.aling{
+		padding: 15px;
+	}
+
+	li{
+		list-style: none;
+	}
+
+	.span1{
+		background: black; 
+		color: white;
+		padding: 7px;
+	}
+
+	.clickaq{
+		color: #0000FF;
+		font-style: italic;
+		font-weight: bold;
+		font-size: 1em;
+		animation-name: animacao-link;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+	}
+
+	.float-esquerda li:active{color: #00ff03;}
+
+	.bloco_na_linha li:active{color: #00ff03;}
+
+
+	@keyframes animacao-link{
+	from{color: #0000FF;}
+	to{color: limegreen;}
+}
+
+
+
+
+	</style>
+
+
+
+</head>
+<body>
+
+	<!-- ÍNICIO CARROSSEL BOOTSTRAP -->
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="Imagem/estrellagalicia-carrossel.png" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="Imagem/Eisenbahn-carrossel.png" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="Imagem/Therezopolis-carrossel.png" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		 <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Anterior</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Próximo</span>
+		  </button>
+		</div>
+<!-- FIM DO CARROSSEL BOOTSTRAP -->
+
+<div style="background: royalblue url(Imagem/fundoazul.png); border: 1px solid green;">
+
+
+	<div class="borda-titulo">
+		<h3 class="centralizar-texto">Distribuidora <span id="cor1">Nova</span> <span id="cor2">Geração</span></h3>
+		<h2 class="centralizar-texto">Vendedor Eduardo Rota 73</h2>
+	</div>
+
+	<div id="imagem-capa">
+		
+	</div>
+
+	<div style="width: 410px;">
+		
+		<ul class="bloco_na_linha" style="padding-top: 15px; margin-left: 18px;">
+			<a class="menu-principal" style="padding-left: 15px;" href="index.html"><li class="centralizar-texto">Início</li></a>
+			<a class="menu-principal" href="missao.html"><li class="centralizar-texto">Missão</li></a>
+			<a class="menu-principal" href="contato.html"><li class="centralizar-texto">Contato</li></a>
+		</ul>
+
+	</div>
+
+	<div id="texto-cadastro">
+
+
+		<span style="font-weight: bold;">Cláusula 1ª</span> – A COMODANTE dá à COMODATÁRIA, em comodato, para uso exclusivo em seu estabelecimento comercial, o(s) equipamento(s)
+(“EQUIPAMENTO”), com número de série e movimentação descritas abaixo, cujas especificações encontram-se discriminadas na Nota Fiscal que o 
+acompanhará, o qual deverá ser utilizado exclusivamente com os produtos fornecidos pela COMODANTE, nos termos da Cláusula 13ª e volume previsto 
+na Clausula 17ª deste instrumento.<br>
+Nº DE SÉRIE MOVIMENTAÇÃO MODELO LOGOMARCA VOLTAGEM META<br><br>
+<span style="font-weight: bold;">Cláusula 2ª</span> – O prazo de duração do presente contrato é indeterminado, iniciando-se na data da efetiva entrega do EQUIPAMENTO, podendo ser rescindido 
+por qualquer das partes, mediante aviso prévio de 05 (cinco) dias.
+Parágrafo primeiro: Verificada a rescisão, a COMODATÁRIA se obriga a devolver o EQUIPAMENTO dado em comodato, sob pena de cometer esbulho e 
+sujeitar-se a imediata reintegração de posse, renunciando ao direito de retenção, a qualquer título, sujeitando-se, ainda, a perdas e danos que seu ato 
+vier a causar à COMODANTE, principalmente se houver mora na devolução do equipamento ou danos de qualquer natureza causados ao mesmo.<br><br>
+<span style="font-weight: bold;">Cláusula 3ª</span> – Na hipótese de decretação de insolvência, recuperação judicial ou extrajudicial, ou falência de qualquer das partes, o presente contrato 
+rescindir-se-á de imediato, sem a necessidade de qualquer pré-aviso, podendo a parte prejudicada por tais situações tomar as medidas necessárias à 
+defesa de seus interesses, sem que com isso seja configurada qualquer violação a este Contrato.<br><br>
+<span style="font-weight: bold;">Cláusula 4ª</span> – Não é responsabilidade da COMODANTE, a força elétrica motriz necessária ao normal funcionamento do EQUIPAMENTO dado em comodato, 
+nem tampouco qualquer prejuízo advindo às mercadorias nele depositadas, em virtude de queda ou falta de energia elétrica ou de qualquer outra causa.<br><br>
+<span style="font-weight: bold;">Cláusula 5ª</span> – A COMODATÁRIA não poderá ceder ou transferir o presente contrato de comodato a terceiros, no todo ou em parte, nem tampouco 
+movimentar o equipamento objeto do mesmo para outro endereço diverso do disposto em contrato, sem prévia autorização da COMODANTE, sob pena de 
+imediata rescisão deste contrato.<br><br>
+<span style="font-weight: bold;">Cláusula 6ª</span> – No caso de venda ou transferência de propriedade do estabelecimento comercial da COMODATÁRIA, esta se obriga a denunciar a existência 
+do presente contrato de comodato aos novos adquirentes ou titulares, os quais ficam obrigados a respeitá-lo em todas as suas cláusulas e condições, 
+salvo se de forma diferente desejar proceder a COMODANTE.<br><br>
+<span style="font-weight: bold;">Cláusula 7ª</span> – Obriga-se a COMODATÁRIA a zelar pela conservação do equipamento que ora lhe é dada em comodato, para que o mesmo permaneça em 
+boas condições de uso, apresentação e funcionamento.
+Parágrafo único: Será de responsabilidade da COMODANTE propiciar os serviços de manutenção preventiva e corretiva do EQUIPAMENTO, bem como 
+quaisquer outros reparos ou consertos que se fizerem necessárias, sendo obrigação da COMODATÁRIA comunicar imediatamente a COMODANTE a 
+ocorrência de algum evento danoso, de modo que esta possa realizar os competentes serviços, sendo vedada a intervenção de terceiros, distintos dos 
+autorizados por esta, no processo de manutenção, reparo ou conserto do EQUIPAMENTO.<br><br>
+<span style="font-weight: bold;">Cláusula 8ª</span> – À COMODANTE fica assegurado o direito de vistoriar o EQUIPAMENTO sempre que julgar conveniente, sem a necessidade de aviso prévio, 
+direito esse decorrente da sua qualidade de proprietária.<br><br>
+<span style="font-weight: bold;">Cláusula 9ª</span> – A COMODATÁRIA deve informar prontamente à COMODANTE qualquer ato propício ou de terceiros que possa vir a afetar de algum modo 
+a utilização do EQUIPAMENTO ora cedido(s) em comodato; ou ato tendente a turbar a posse e/ou propriedade dos mesmos; ou ainda furto, roubo e/ou 
+desaparecimento do EQUIPAMENTO. Mesmo assim, é de responsabilidade da COMODATÁRIA informar ao terceiro que o EQUIPAMENTO é de propriedade 
+da COMODANTE, bem como tomar todas as medidas necessárias às suas expensas, a mantê-lo no estado em que se encontra em seu estabelecimento.<br><br>
+<span style="font-weight: bold;">Cláusula 10ª</span> – A COMODATÁRIA obriga-se a adotar todas as medidas necessárias, a fim de que o EQUIPAMENTO de propriedade da COMODANTE 
+mantenha-se livre de retenção, penhora, sequestro, arresto ou qualquer outro ato constritivo decorrente de medida judicial, ou não, promovida contra a 
+mesma.<br><br>
+<span style="font-weight: bold;">Cláusula 11ª</span> – É permitido à COMODANTE a inserção de legendas, logotipos e/ou sinais de propaganda inerentes aos seus produtos no EQUIPAMENTO 
+cedido em comodato, com o que a COMODATÁRIA expressamente concorda e autoriza.<br><br>
+<span style="font-weight: bold;">Cláusula 12ª</span> – À COMODATÁRIA é vedado promover modificações de números, dísticos, cores e apresentação do EQUIPAMENTO dado em comodato, bem 
+como introduzir qualquer alteração sem prévia e expressa autorização da COMODANTE, sob pena de rescisão imediata do presente contrato.<br><br>
+<span style="font-weight: bold;">Cláusula 13ª</span> – Caso o EQUIPAMENTO cedido em comodato seja do tipo conservadora de frio, cabe à COMODATÁRIA cumprir com os padrões estabelecidos 
+pela COMODANTE, no que se refere a exposição dos produtos no equipamento.
+ CONTRATO DE COMODATO
+2
+Parágrafo Primeiro: Fica expressamente proibida a utilização do EQUIPAMENTO para acondicionar outros produtos que não os adquiridos da 
+COMODANTE;
+Parágrafo Segundo: A COMODANTE possui pleno conhecimento de que existe um prazo máximo de validade para os produtos da COMODANTE, 
+responsabilizando-se isoladamente pela retirada dos produtos vencidos do EQUIPAMENTO mencionado(s) no “caput” desta cláusula;
+Parágrafo Terceiro: A COMODATÁRIA deve disponibilizar ao consumidor final os produtos da COMODANTE nas condições de higiene estabelecidas pela 
+mesma, assegurando a qualidade dos produtos. Para isso, fica permitido o acesso de pessoal autorizado pela COMODANTE para efetuar os controles de 
+qualidade e funcionamento, quando esta julgar necessário.<br><br>
+<span style="font-weight: bold;">Cláusula 14ª</span> – Caso a COMODANTE venha a ser demandada por terceiros ou qualquer órgão público relativamente ao uso indevido do EQUIPAMENTO, 
+bem como à exposição à venda de seus produtos em desacordo com as normas e leis vigentes, por culpa da COMODATÁRIA, esta arcará com os custos 
+de defesa da COMODANTE, bem como responderá por quaisquer indenizações, multas, e perdas e danos que sejam imputadas à COMODANTE.<br><br>
+<span style="font-weight: bold;">Cláusula 15ª</span> – Quando o equipamento fornecido for do tipo “Vending Machine”, acionado mediante a inserção de fichas, a COMODATÁRIA deverá adquirir 
+as mesmas somente da COMODANTE, caso assim estabeleça.<br><br>
+<span style="font-weight: bold;">Cláusula 16ª</span> – Até a efetiva restituição do EQUIPAMENTO à COMODANTE, a COMODATÁRIA responderá perante quem de direito por eventuais danos 
+ou prejuízos que o(s) equipamento(s) possa(m) vir a causar a bens de sua propriedade, sua pessoa e/ou sobre a integridade física de terceiros, e/ou bens 
+de propriedade de terceiros em virtude da utilização indevida, ou guarda inadequada do mesmo.<br><br>
+<span style="font-weight: bold;">Cláusula 17ª</span> – Fica estabelecida como condição para a manutenção do presente contrato a meta de compra mensal de “XX” CAIXAS/MÊS em mercadorias 
+da COMODANTE pela COMODATÁRIA.
+Parágrafo único: Não havendo o cumprimento da meta especificada no caput da presente cláusula a COMODATÁRIA ficará obrigada a devolver 
+imediatamente o EQUIPAMENTO dado em comodato, sob pena de rescisão imediata do presente contrato.<br><br>
+<span style="font-weight: bold;">Cláusula 18ª</span> – O presente contrato aperfeiçoa-se com a efetiva entrega do EQUIPAMENTO e consequente assinatura pelas partes e testemunhas, bem 
+assim do canhoto de recebimento constante da Nota Fiscal de Comodato nos termos seguintes obrigando as partes contratantes por si, seus sucessores
+e herdeiros a cumpri-lo em todos seus termos e condições.
+Parágrafo Primeiro – O signatário deste Contrato pela COMODATÁRIA assume e responsabiliza-se civil e criminalmente pela condição de sócio, 
+administrador, ou representante legal da COMODATÁRIA.<br><br>
+<span style="font-weight: bold;">Cláusula 19ª</span> – A infração ou falta de cumprimento de qualquer das cláusulas do presente contrato importará na sua rescisão automática e de pleno 
+direito, independentemente de qualquer aviso ou notificação judicial ou extrajudicial, sujeitando-se a parte infratora a indenizar a outra por perdas e 
+danos, sem prejuízo de outras cominações previstas nas cláusulas antecedentes. Se a parte infratora for a COMODATÁRIA, ficará também obrigada a 
+devolver imediatamente o EQUIPAMENTO dado em comodato.<br><br>
+<span style="font-weight: bold;">Cláusula 20ª</span> – Qualquer tolerância por parte da COMODANTE às disposições aqui estipuladas, não será considerada novação contratual, nem implicará 
+em perda ou renúncia a direitos, mas caracterizará ato de mera liberalidade, não liberando a COMODATÁRIA de cumprir fielmente suas obrigações aqui 
+assumidas.<br><br>
+<span style="font-weight: bold;">Cláusula 21ª</span> – Toda e qualquer alteração de dados cadastrais da COMODATÁRIA, seja da Pessoa Jurídica e/ou de seus sócios, ou representante(s) 
+legal(is), deverá ser comunicada de imediato à COMODANTE, ocasião em que deverá ser celebrado aditamento ou novo contrato por escrito entre as partes 
+em, no máximo, 15 (quinze) dias sob pena de rescisão imediata e independentemente de qualquer aviso.<br><br>
+<span style="font-weight: bold;">Cláusula 22ª</span> – Quaisquer negociações, acordos ou contratos celebrados anteriormente entre as partes, por escrito ou não, perdem seus efeitos a partir 
+da assinatura deste Contrato, o qual passa a ser o único instrumento entre as partes.<br><br>
+<span style="font-weight: bold;">Cláusula 23ª</span> – Fica eleito o Foro Central de Curitiba/PR, como o único competente para dirimir todas as questões oriundas do presente contrato, 
+renunciando as partes expressamente a qualquer outro por mais privilegiado que seja.
+E, por estarem justas e contratadas, firmam o presente contrato, em 2 (duas) vias de igual teor e forma, na presença de 2 (duas) testemunhas abaixo 
+assinadas.
+	</div>
+
+	<div id="rodape">
+		<p id="rodape" class="centralizar-texto">Site elaborado por Eduardo Rozemback Albini</p>
+		<p id="rodape" class="centralizar-texto">Idealizado para telas de celulares</p>
+	</div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
